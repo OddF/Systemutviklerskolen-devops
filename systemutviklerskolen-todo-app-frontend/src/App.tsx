@@ -5,12 +5,12 @@ import './App.css';
 
 const initialTodos: Todo[] = [
   {
-    text: 'Walk the dog',
-    complete: false,
+    text: 'Lage presentasjon',
+    complete: true,
   },
   {
-    text: 'Write app',
-    complete: true,
+    text: 'Fikse app',
+    complete: false,
   },
 ];
 
@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Systemutviklerskolen todo-app</h1>
+      <h1>Systemutviklerskolen todo-app</h1> 
       <TodoList todos={todos} toggleTodo={toggleTodo} />
       <AddTodoForm addTodo={addTodo} />
     </div>

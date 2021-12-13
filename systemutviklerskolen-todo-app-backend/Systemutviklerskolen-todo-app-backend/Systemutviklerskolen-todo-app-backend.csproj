@@ -7,4 +7,9 @@
     <RootNamespace>Systemutviklerskolen_todo_app_backend</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Azure.Data.Tables" Version="12.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="6.0.0" />
+  </ItemGroup>
+
 </Project>
