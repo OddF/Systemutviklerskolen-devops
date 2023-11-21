@@ -73,7 +73,7 @@ jobs:
       working-directory: systemutviklerskolen-todo-app-backend/
 
     - name: Copy frontend to artifact
-      run: cp -r systemutviklerskolen-todo-app-frontend/build ./myapp/todo-app-frontend
+      run: cp -r systemutviklerskolen-todo-app-frontend/build ${{env.DOTNET_ROOT}}/myapp/todo-app-frontend
 
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v3
